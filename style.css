@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+}
+
+body {
+    font-family: "Montserrat" , sans-serif;
+}
+
+h1,h2,h3.h4,h5,h6, strong {
+    color: black;
+}
+
+p{
+    font-size: 16px;
+    line-height: 30px;
+}
+
+p,span, label, input,textarea, li{
+    color:grey
+}
+
+a{
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200) {
+    .container{
+        width: 90%;
+    }
+}
+/*button*/
+.btn {
+    padding: 16px 24px;
+    background: white;
+    border: grey;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.04) 0 3px 5px;
+}
+
+/*title*/
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    color: black;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 11px;
+
+}
+
+/* logo dan navigation*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 46px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 36px;
+}
+.logo a{
+    color: black;
+
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    color: grey;
+}
+
+.burger div{
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 7px;
+    transition: all 0.3s;
+    z-index: 99;
+}
+.burger {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 33px;
+    right: 35px;
+}
+#text {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.text-name {
+    font-size: 46px;
+    font-weight: 700;
+    margin: 8px 0 16px;
+}
+.text-right img {
+    width: 60%;
+    border-radius: 50%;
+}
+.text-right{
+    display: flex;
+    justify-content: center;
+    
+}
+/* about section*/
+#about {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 300px;
+}
+ .title{
+    font-size: 46px;
+    font-weight: 700;
+    margin: 8px 0 16px;
+ }
